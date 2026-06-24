@@ -258,12 +258,14 @@ body {
   overflow: hidden;
 }
 
-/* Reading View */
 .reading-view {
   max-width: 800px;
   margin: 0 auto;
   padding: 3rem;
   background: var(--surface-color);
+  height: calc(100vh - 4rem); /* subtract approximate header/padding */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .article-headline {
